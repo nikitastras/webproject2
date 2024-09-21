@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Skyler Strasburg</h1>
+    <img src="skyler-strasburg.png" alt="Skyler Strasburg" width="250" height="250">
+
+    <h2>Personal Info</h2>  
+    <ul> 
+        <li>Major: <b>Software Engineering</b></li>
+        <li>High School: <b>Westlake</b></li>
+        <li>Current Year: <b>Sophomore</b></li>
+        <li>Favorite Ice Cream Flavor: <b>Cherry with cherries at <a href="https://www.youtube.com/watch?v=5kv9VmiC9IY">SubZero</a></b></li>
+    </ul>
+
+    <h2>My Five Favorite Books</h2>
+    <ol>
+        <li><i><a href="https://www.gocomics.com/calvinandhobbes">Calvin and Hobbes</a></i></li>
+        <li><i><a href="https://en.wikipedia.org/wiki/The_Giver">The Giver</a></i></li>
+        <li><i><a href="https://www.hplovecraft.com/writings/fiction/">Bloodcurdling Tales of Horror and the Macabre</a></i></li>
+        <li><i><a href="https://www.jkrowling.com/">Harry Potter Series</a></i></li>
+        <li><i><a href="https://en.wikipedia.org/wiki/Trigun">Trigun Manga</a></i></li>
+    </ol>
+
+    <h2>Haiku</h2>
+    <p>
+        Beneath quiet waves,<br>
+        Hidden truths rise with the dawn,<br>
+        Echoes of the self.
+    </p>
+    <p>
+        This haiku reflects my fascination with the hidden depths of the human mind and the exploration toward self-discovery.<br>The imagery of waves and dawn symbolizes the unveiling of inner truths as we grow and learn.
+    </p>
+
+    <h2>Brief Essay About Me</h2>
+    <p>
+        Ever since I was young, technology has been a central part of my life.<br>My interest in software engineering sparked when I wrote my first "Hello World" program, and it has only grown since then.<br>I am passionate about creating software that can make a positive impact on people's lives.
+    </p>
+    <p>
+        Outside of academics, I have a deep love for art.<br>Whether it's sketching or painting, art allows me to express myself creatively and brings balance to my technically oriented studies.<br>I believe that merging creativity with technology can lead to innovative solutions.
+    </p>
+    <p>
+        In my free time, I enjoy gaming and exploring new technologies.<br>These hobbies not only provide entertainment but also keep me updated with the latest trends in the tech world.<br>I am always eager to learn and embrace new challenges.
+    </p>
+
+    <h2>My Personal Interests</h2>
+    <ul>
+        <li>Art</li>
+        <li>Deep Learning</li>
+        <li>Programming</li>
+        <li>Gaming</li>
+        <li>Learning New Technologies</li>
+    </ul>
+
+    <h2>Class Schedule</h2>
+    <table class="schedule">
+        <tr>
+            <th>Hour</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>12:00 - 12:50pm</td>
+            <td rowspan="2" class="class-hum101g">HUM 101G</td>
+            <td></td>
+            <td rowspan="2" class="class-hum101g">HUM 101G</td>
+            <td></td>
+            <td rowspan="2" class="class-hum101g">HUM 101G</td>
+        </tr>
+        <tr>
+            <td>12:00 - 12:50pm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1:00 - 2:15pm</td>
+            <td></td>
+            <td class="class-cs2550">CS 2550</td>
+            <td></td>
+            <td class="class-cs2550">CS 2550</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2:00 - 2:50pm</td>
+            <td class="class-phil2050">PHIL 2050</td>
+            <td></td>
+            <td class="class-phil2050">PHIL 2050</td>
+            <td></td>
+            <td class="class-phil2050">PHIL 2050</td>
+        </tr>
+        <tr>
+            <td>5:30 - 6:45pm</td>
+            <td></td>
+            <td class="class-cs2600">CS 2600</td>
+            <td></td>
+            <td class="class-cs2600">CS 2600</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5:30 - 8:00pm</td>
+            <td></td>
+            <td></td>
+            <td class="class-cs489r">CS 489R</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Online</td>
+            <td colspan="5" class="class-mat1050">MAT 1050</td>
+        </tr>
+    </table>
+    
+
+    <footer>       
+        <p><span id="current-date"></span></p>      
+    </footer>
+
+    <script>
+        const dateElement = document.getElementById('current-date');
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        dateElement.textContent = today.toLocaleDateString(undefined, options);
+    </script>
+
+</body>
+</html>

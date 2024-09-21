@@ -1,0 +1,74 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 25px;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right, #cecece, #5954e4);
+    font-size: 0.97em;
+}
+
+/* Table styling */
+table.schedule {
+    width: 100%;
+    max-width: 900px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #ffffffcc;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+table.schedule th, table.schedule td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+table.schedule th, table.schedule td {
+    width: 16.66%;
+}
+
+/* Header styling */
+table.schedule th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Class schedule colors */
+.class-hum101g {
+    background-color: rgb(207, 224, 111);
+    border: 1px solid rgb(180, 200, 80);
+}
+
+.class-phil2050 {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid indigo;
+}
+
+.class-cs489r {
+    background-color: rgb(43, 144, 226);
+    color: white;
+    border: 1px solid rgb(10, 100, 180);
+}
+
+.class-cs2550 {
+    background-color: rgb(211, 38, 202);
+    color: white;
+    border: 1px solid rgb(180, 30, 180);
+}
+
+.class-cs2600 {
+    background-color: rgb(12, 211, 45);
+    color: white;
+    border: 1px solid rgb(10, 180, 30);
+}
+
+.class-mat1050 {
+    background-color: rgb(38, 136, 175);
+    color: white;
+    border: 1px solid rgb(30, 110, 150);
+}
